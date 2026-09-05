@@ -1,0 +1,293 @@
+generated: '2026-09-05'
+method: probed
+source: https://www.1knetworks.in/
+name: 1K Kirana Bazaar — well-known and contract-discovery probe
+description: >-
+  Probe of the /.well-known/ surface and the common machine-readable contract paths on
+  every host this record knows for Odicea Distribution Technologies Pvt. Ltd. (1K Kirana
+  Bazaar / 1K Networks). NOTHING WAS SERVED and NO WellKnown, SecurityTxt, LLMsTxt,
+  AgentCard, OpenAPI or MCPServer pointer is emitted from this file — it is a record of an
+  absence, not of a presence. On 1knetworks.in every /.well-known/* path answers HTTP 200
+  with the site's own 30,685-byte Astro HTML shell (Content-Type text/html), including a
+  control path that cannot exist, so none of those 200s is a document. On 1knetworks.com
+  every path answers HTTP 525 (Cloudflare origin SSL handshake failed).
+host_ownership: confirmed
+host_ownership_note: >-
+  1knetworks.in is the company's own domain: its WHOIS Registrant Organization is
+  "Odicea Distribution Technologies Private Limited" (Haryana, IN, registrar GoDaddy,
+  created 2024-06-09) and the page footer reads "© 2026 Odicea Distribution Technologies
+  Pvt. Ltd. · Gurugram, Haryana, India". 1knetworks.com is the domain the company operated
+  while trading, but it was re-registered 2025-03-29 behind a Domains By Proxy privacy
+  service and its origin no longer completes a TLS handshake, so no present-day response
+  from it is attributed to the company.
+robots_note: >-
+  https://www.1knetworks.in/robots.txt (HTTP 200, text/plain) is Cloudflare's managed
+  content-signals file. It sets `User-agent: * / Content-Signal:
+  search=yes,ai-train=no,use=reference / Allow: /` and then adds a Disallow for a named
+  list of AI crawlers — Amazonbot, Applebot-Extended, Bytespider, CCBot, ClaudeBot,
+  CloudflareBrowserRenderingCrawler, Google-Extended, GPTBot and meta-externalagent. Only
+  paths permitted to the `*` group were read, and the content signal `ai-train=no` is
+  honored: nothing from this host is used as model training input.
+control_probe:
+  url: https://www.1knetworks.in/this-path-cannot-exist-xyz9-1k
+  status: 403
+  note: >-
+    Control path that cannot exist. It returns the same Cloudflare managed-challenge
+    interstitial the apex returns, while every /.well-known/* path returns HTTP 200 with
+    the site's marketing HTML shell — proving the 200s are an SPA/static catch-all, not
+    served documents.
+hosts:
+- host: www.1knetworks.in
+  role: current marketing site (Astro static build behind Cloudflare)
+  note: >-
+    Probed 2026-09-05 with a browser User-Agent. Every path below returned HTTP 200 with
+    Content-Type text/html and the identical 30,685-byte marketing shell whose <title> is
+    "1K Networks - India's Commerce OS". No document was captured.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: HTML marketing shell (text/html), not an RFC 9116 document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: HTML marketing shell (text/html), not OIDC discovery metadata
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: HTML marketing shell (text/html), not RFC 8414 metadata
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: HTML marketing shell (text/html), not an RFC 9727 api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: HTML marketing shell (text/html), not a plugin manifest
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: >-
+      HTML marketing shell (text/html), not an A2A AgentCard. Rejected per STEP 0b: a 200
+      whose body is HTML is the dominant false positive on this probe. No a2a/ artifact is
+      written and no AgentCard pointer is emitted.
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: >-
+      HTML marketing shell (text/html), not a pre-0.3 AgentCard. Rejected for the same
+      reason.
+  - path: /llms.txt
+    status: 200
+    file: null
+    note: HTML marketing shell (text/html), not an llms.txt
+  - path: /robots.txt
+    status: 200
+    file: null
+    note: >-
+      A real text/plain document, but it is Cloudflare's managed content-signals file
+      rather than a discovery artifact. Recorded under robots_note above; no pointer.
+  - path: /openapi.json
+    status: 403
+    file: null
+    note: Cloudflare managed challenge; no spec
+  - path: /swagger.json
+    status: 403
+    file: null
+    note: Cloudflare managed challenge; no spec
+  - path: /api-docs
+    status: 403
+    file: null
+    note: Cloudflare managed challenge; no docs
+  - path: /sitemap.xml
+    status: 403
+    file: null
+    note: Cloudflare managed challenge; no sitemap
+- host: 1knetworks.in
+  role: apex of the current marketing site
+  note: Identical catch-all behaviour to the www host; probed 2026-09-05.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: HTML marketing shell, not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: HTML marketing shell, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: HTML marketing shell, not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: HTML marketing shell, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: HTML marketing shell, not a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: HTML marketing shell, not an AgentCard
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: HTML marketing shell, not an AgentCard
+  - path: /llms.txt
+    status: 200
+    file: null
+    note: HTML marketing shell, not an llms.txt
+- host: www.1knetworks.com
+  role: former primary site (2019-2024); origin no longer answers
+  note: >-
+    Every path returns HTTP 525 — Cloudflare reaches the edge but the origin refuses the
+    TLS handshake. Nothing is served and nothing can be attributed to the company today.
+  documents:
+  - path: /.well-known/security.txt
+    status: 525
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 525
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 525
+    file: null
+  - path: /.well-known/api-catalog
+    status: 525
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 525
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 525
+    file: null
+  - path: /.well-known/agent.json
+    status: 525
+    file: null
+  - path: /openapi.json
+    status: 525
+    file: null
+  - path: /swagger.json
+    status: 525
+    file: null
+  - path: /api-docs
+    status: 525
+    file: null
+  - path: /llms.txt
+    status: 525
+    file: null
+  - path: /robots.txt
+    status: 525
+    file: null
+- host: 1knetworks.com
+  role: apex of the former primary site
+  note: Identical 525 on every path; probed 2026-09-05.
+  documents:
+  - path: /.well-known/security.txt
+    status: 525
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 525
+    file: null
+  - path: /.well-known/agent.json
+    status: 525
+    file: null
+  - path: /openapi.json
+    status: 525
+    file: null
+  - path: /llms.txt
+    status: 525
+    file: null
+contract_discovery:
+  performed: '2026-09-05'
+  result: none
+  note: >-
+    STEP 0b was run in full before recording "no contract". No OpenAPI, Swagger, GraphQL
+    SDL, MCP tools/list, AsyncAPI, OGC surface, WSDL, .proto or Postman collection was
+    found on any host.
+  dns_resolution:
+    resolving:
+    - 1knetworks.in
+    - www.1knetworks.in
+    - 1knetworks.com
+    - www.1knetworks.com
+    nxdomain:
+    - api.1knetworks.in
+    - docs.1knetworks.in
+    - developer.1knetworks.in
+    - developers.1knetworks.in
+    - app.1knetworks.in
+    - store.1knetworks.in
+    - api.1knetworks.com
+    - docs.1knetworks.com
+    - developer.1knetworks.com
+    - api-gateway.1knetworks.com
+    - vendor-api.1knetworks.com
+    - bulky-api.1knetworks.com
+    - go-api-staging.1knetworks.com
+    - gweb1k-apis.1knetworks.com
+    - stageapi.1knetworks.com
+    - wms.1knetworks.com
+    - pos.1knetworks.com
+    - app.1knetworks.com
+    - web.1knetworks.com
+    - vendor.1knetworks.com
+    - saptrishi.1knetworks.com
+  historical_api_hosts:
+    source: >-
+      https://web.archive.org/cdx/search/cdx?url=1knetworks.com&matchType=domain (HTTP 200,
+      329 distinct URLs covering the domain's entire operating history)
+    hosts:
+    - api.1knetworks.com (paths seen: /, /login, /v1/login, /v1/products)
+    - api-gateway.1knetworks.com
+    - api-gateway-staging.1knetworks.com
+    - bulky-api.1knetworks.com
+    - go-api-staging.1knetworks.com
+    - gweb1k-apis.1knetworks.com
+    - gweb1k-apis-staging.1knetworks.com
+    - stageapi.1knetworks.com
+    - vendor-api.1knetworks.com
+    - webv0-api-uat.1knetworks.com
+    - wms-staging-api.1knetworks.com
+    note: >-
+      These were the company's internal and staging service hosts, not a published
+      developer program — the archive holds no developer portal, API reference, swagger or
+      openapi path on www.1knetworks.com, and every host listed here is NXDOMAIN today. The
+      only /.well-known/* entries in the archive (ai-plugin.json, assetlinks.json,
+      dnt-policy.txt, gpc.json, nodeinfo, openid-configuration, security.txt, trust.txt)
+      are third-party crawler probes, not documents the company served. Nothing is derived
+      from any of it.
+  graphql:
+    probed: false
+    note: No /graphql surface and no graphql-shaped host exists to introspect.
+  mcp:
+    probed: false
+    note: >-
+      No hosted MCP endpoint is published or advertised anywhere on the company's surface,
+      and no endpoint URL is guessed. No mcp/ artifact is written.
+  ogc:
+    probed: false
+    note: >-
+      No evidence points at an OGC surface — the company is a grocery-retail franchise
+      operator with no geospatial product, no WMS/WFS/WCS/WMTS/CSW or "OGC API" language
+      anywhere in its material, and no baseURL to probe. Per STEP 0b, blind path patterns
+      are not run.
+  soap_wsdl:
+    probed: false
+    note: No baseURL host exists to probe with ?wsdl / ?singleWsdl.
+  packages:
+    npm:
+      searched: true
+      result: none
+      note: >-
+        registry.npmjs.org/1knetworks and /1k-kirana both 404; the npm search API returns
+        0 results for "1knetworks". No packages/ artifact and no SDKs pointer.
+    github:
+      searched: true
+      result: none
+      note: >-
+        GitHub user/org search returns 1KNetworks (0 public repos, empty profile, created
+        2026-07-21) and the unrelated KiranaBazaar / kiranabazaar7 accounts. None is
+        attributable to Odicea Distribution Technologies.

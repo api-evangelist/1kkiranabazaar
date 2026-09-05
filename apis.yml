@@ -1,17 +1,137 @@
 aid: 1kkiranabazaar
-name: 1K
-description: '1K is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: 1K Kirana Bazaar
+description: >-
+  1K Kirana Bazaar (legal entity Odicea Distribution Technologies Private Limited, also
+  trading as 1K Networks) is a Gurugram, Haryana based Indian kirana-tech company founded
+  in 2018 by Kumar Sangeetesh, Sachin Sharma and Abhishek Halder. It franchised
+  neighbourhood grocery stores across Delhi NCR, Haryana, Rajasthan and Uttar Pradesh and
+  gave them an operating stack — a point-of-sale and inventory system, direct FMCG
+  sourcing through its own B2B distribution network, store-level analytics, payments, the
+  Farm Gold private label, the OneClub loyalty programme, and a consumer ordering app that
+  turned the store into a local fulfilment point. At its peak the company reported around
+  1,000 partner stores, more than a million customers and coverage of 25-plus districts,
+  and it raised roughly $36-44 million across seed, Series A ($7M, 2021), Series B ($25M,
+  2022) and a 2023 bridge round from Info Edge Ventures, Falcon Edge Capital, Alpha Wave
+  Global and Quiet Capital. Operations all but stopped in May 2024 amid a funding shortfall
+  and reported bankruptcy and distress-sale discussions, after headcount fell from over
+  1,000 to roughly 30. The company never operated a public developer program: there is no
+  developer portal, API reference, OpenAPI or other machine-readable specification, SDK,
+  package or webhook catalogue on any domain it controls, and the API hosts it once ran
+  internally (api., api-gateway., vendor-api., wms-*-api., go-api-staging.1knetworks.com)
+  are all NXDOMAIN today. The company's own surviving web presence is the single-page
+  marketing site at www.1knetworks.in, whose WHOIS registrant organization is Odicea
+  Distribution Technologies Private Limited.
 url: https://raw.githubusercontent.com/api-evangelist/1kkiranabazaar/refs/heads/main/apis.yml
+x-image-note: >-
+  No image pointer is emitted. The live site publishes no og:image, no twitter:image
+  and no favicon — /favicon.svg, /favicon.ico and /favicon.png all return the site's
+  30,685-byte HTML shell rather than an image — so there is no first-party logo asset
+  to reference and none is invented.
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-source-url: https://equityzen.com/company/1kkiranabazaar
 x-tier: stub
-x-tier-reason: harvest
+x-tier-reason: no-developer-program
+x-legal-name: Odicea Distribution Technologies Private Limited
+x-trading-names:
+- 1K Kirana Bazaar
+- 1K Networks
+- Niyotail
+x-founded: '2018'
+x-founders:
+- Kumar Sangeetesh
+- Sachin Sharma
+- Abhishek Halder
+x-headquarters: Gurugram, Haryana, India
+x-status: distressed
+x-status-note: >-
+  Inc42 reported in 2024 that 1K Kirana had all but shut shop in May 2024, was facing
+  possible bankruptcy and a distress sale, and was down to roughly 30 employees from over
+  1,000 in August 2023, with its website non-functional and its Android and iOS consumer
+  apps unusable. A single-page marketing site is live again at www.1knetworks.in and
+  carries a 2026 copyright line, but no operating or funding event after the 2023 bridge
+  round has been found, so the company is recorded as distressed rather than either
+  operating normally or formally defunct.
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: >-
+  Nothing in this company's public surface is a developer product. The live site
+  (www.1knetworks.in) is a one-page Astro build whose entire navigation is in-page anchors
+  (#home, #platform, #cta) — there is no /developers, /docs, /api or /pricing page to
+  reach — and the words API, SDK, webhook and developer do not appear anywhere in its
+  rendered text. The Wayback Machine holds 329 distinct URLs for 1knetworks.com covering
+  its whole operating history; the only API-shaped entries are internal service hosts
+  (api., api-gateway., api-gateway-staging., bulky-api., go-api-staging., gweb1k-apis.,
+  stageapi., vendor-api., webv0-api-uat., wms-staging-api.1knetworks.com) plus
+  third-party crawler probes of /.well-known/*, and every one of those hosts is NXDOMAIN
+  as of this probe. Products were retailer and consumer mobile apps (Android package
+  com.niyotail.consumer) and an in-store PoS, not an API.
+x-domains:
+- domain: 1knetworks.in
+  status: live
+  role: current marketing site
+  registrant_organization: Odicea Distribution Technologies Private Limited
+  registrar: GoDaddy
+  created: '2024-06-09'
+  note: >-
+    Ownership confirmed from WHOIS (Registrant Organization "Odicea Distribution
+    Technologies Private Limited", Haryana, IN) and from the site footer, which reads
+    "© 2026 Odicea Distribution Technologies Pvt. Ltd. · Gurugram, Haryana, India". Fronted
+    by Cloudflare; the apex answers a managed bot challenge (403) but subpaths serve real
+    HTML to a browser User-Agent, so the site is live, not dead. Both contact addresses on
+    the page are Cloudflare-obfuscated placeholders in the reserved .example TLD
+    (team@1knetworks.example, hello@1knetworks.example), which is recorded here as observed
+    fact rather than interpreted.
+- domain: 1knetworks.com
+  status: unreachable
+  role: former primary site (2019-2024)
+  registrant_organization: Domains By Proxy, LLC (privacy service)
+  registrar: GoDaddy.com, LLC
+  created: '2025-03-29'
+  note: >-
+    The domain the company operated while trading. It now returns HTTP 525 (Cloudflare
+    origin SSL handshake failed) on every path including the apex, was re-registered
+    2025-03-29 — after the company's May 2024 collapse — and its WHOIS is behind a privacy
+    proxy, so present-day control cannot be attributed to Odicea. It is deliberately NOT
+    wired as a Website pointer and nothing is derived from it.
+x-venue-listings:
+- venue: EquityZen
+  url: https://equityzen.com/company/1kkiranabazaar
+  status: 200
+  note: >-
+    Secondary-market share listing; the source of this harvest entry. Recorded here rather
+    than as a common[] Website pointer — a trading-venue listing is a third party's page
+    about the company, not the company's own web presence (roadmap#56).
+x-github-org-note: >-
+  A GitHub search returns the org 1KNetworks (created 2026-07-21, zero public repos, empty
+  profile with no company, blog or location) and the unrelated accounts KiranaBazaar and
+  kiranabazaar7. None can be attributed to Odicea Distribution Technologies and no
+  GitHubOrganization pointer is emitted.
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Retail
+- E-Commerce
+- Commerce
+- Grocery
+- B2B
+- Supply Chain
+- Distribution
+- Point of Sale
+- India
+tags_raw:
+- Company
+- Retail
+- E-Commerce
+- Commerce
+- Grocery
+- B2B
+- Supply Chain
+- Distribution
+- Point of Sale
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +139,61 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/1kkiranabazaar-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/1kkiranabazaar
+  url: https://www.1knetworks.in/
+x-pointer-liveness:
+  checked: '2026-09-05'
+  note: >-
+    Every pointer in this record was fetched at enrichment time. The single Website pointer
+    (https://www.1knetworks.in/) answers a Cloudflare managed bot challenge (HTTP 403) at
+    the apex, but the same host serves the real 30,685-byte marketing page to a browser
+    User-Agent on any subpath, so the page demonstrably exists and the pointer is LIVE, not
+    dead — an edge bot policy is explicitly not a liveness failure. No dead pointer was
+    left in place: the previous Website pointer to https://equityzen.com/company/1kkiranabazaar
+    was removed because a secondary-market trading-venue listing is a third party's page
+    about the company, not the company's own web presence; it is preserved under
+    x-venue-listings.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    1K Kirana Bazaar sells a franchise operating system to kirana store owners as an
+    end-user product — a PoS, a retailer app and a consumer ordering app — and has never
+    run a developer program: its only live site, www.1knetworks.in, is a one-page Astro
+    build whose whole navigation is in-page anchors (#home, #platform, #cta) with no
+    /developers, /docs or /api page to reach and no occurrence of the words API, SDK,
+    webhook or developer in its rendered text, while the former primary domain
+    www.1knetworks.com returns HTTP 525 on every path and each of the eleven API hosts the
+    Wayback Machine records for it (api., api-gateway., vendor-api., wms-staging-api.,
+    go-api-staging.1knetworks.com and siblings) is NXDOMAIN today.
+  evidence:
+  - url: https://www.1knetworks.in/
+    status: 403
+  - url: https://www.1knetworks.in/.well-known/security.txt
+    status: 200
+  - url: https://www.1knetworks.in/.well-known/agent-card.json
+    status: 200
+  - url: https://www.1knetworks.in/this-path-cannot-exist-xyz9-1k
+    status: 403
+  - url: https://www.1knetworks.in/openapi.json
+    status: 403
+  - url: https://www.1knetworks.in/robots.txt
+    status: 200
+  - url: https://www.1knetworks.com/
+    status: 525
+  - url: https://www.1knetworks.com/openapi.json
+    status: 525
+  - url: https://web.archive.org/cdx/search/cdx?url=1knetworks.com&matchType=domain
+    status: 200
+  - url: https://registry.npmjs.org/1knetworks
+    status: 404
+  - url: https://equityzen.com/company/1kkiranabazaar
+    status: 200
+  checked: '2026-09-05'
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
