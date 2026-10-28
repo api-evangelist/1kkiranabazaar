@@ -1,4 +1,4 @@
-# 1K
+# 1K Kirana Bazaar
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-1K is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/1kkiranabazaar
+1K Kirana Bazaar (legal entity Odicea Distribution Technologies Private Limited, also trading as 1K Networks) is a Gurugram, Haryana based Indian kirana-tech company founded in 2018 by Kumar Sangeetesh, Sachin Sharma and Abhishek Halder. It franchised neighbourhood grocery stores across Delhi NCR, Haryana, Rajasthan and Uttar Pradesh and gave them an operating stack — a point-of-sale and inventory system, direct FMCG sourcing through its own B2B distribution network, store-level analytics, payments, the Farm Gold private label, the OneClub loyalty programme, and a consumer ordering app that turned the store into a local fulfilment point. At its peak the company reported around 1,000 partner stores, more than a million customers and coverage of 25-plus districts, and it raised roughly $36-44 million across seed, Series A ($7M, 2021), Series B ($25M, 2022) and a 2023 bridge round from Info Edge Ventures, Falcon Edge Capital, Alpha Wave Global and Quiet Capital. Operations all but stopped in May 2024 amid a funding shortfall and reported bankruptcy and distress-sale discussions, after headcount fell from over 1,000 to roughly 30. The company never operated a public developer program: there is no developer portal, API reference, OpenAPI or other machine-readable specification, SDK, package or webhook catalogue on any domain it controls, and the API hosts it once ran internally (api., api-gateway., vendor-api., wms-*-api., go-api-staging.1knetworks.com) are all NXDOMAIN today. The company's own surviving web presence is the single-page marketing site at www.1knetworks.in, whose WHOIS registrant organization is Odicea Distribution Technologies Private Limited.
+
+**Areas:** Company · Retail · E-Commerce · Commerce · Grocery · B2B · Supply Chain · Distribution · Point-of-Sale · India
+
+## 1K Kirana Bazaar on APIs.io
+
+Everything profiled for 1K Kirana Bazaar is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/1kkiranabazaar/](https://apis.io/providers/1kkiranabazaar/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [1Kkiranabazaar Domain Security](https://apis.io/security/1kkiranabazaar/1kkiranabazaar-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.1knetworks.in/)
+- [Blog](https://www.1knetworks.in/blog/)
+
+## API Evangelist rating
+
+**Kin Score 3.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/1kkiranabazaar/](https://apis.io/providers/1kkiranabazaar/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 1K Kirana Bazaar: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/1kkiranabazaar/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
